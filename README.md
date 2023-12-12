@@ -1,4 +1,4 @@
-# Dollar-cost averaging (DCA) Bot
+# crypto derivatives trading bot - BitMEX
 
 ## Strategy
 
