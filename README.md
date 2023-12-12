@@ -7,6 +7,42 @@ Requirements
 * Python 3.6
 * ProfitView library 
 
+## Warning
+
+### Valid Market Conditions:
+
+1. Trending Markets:
+
+The algorithm is designed to perform well in trending markets where a sustained directional movement is observed.
+Bullish crossovers (short MA > long MA) may be effective during upward trends.
+Bearish crossovers (short MA < long MA) may be effective during downward trends.
+
+2. Stable Price Movements:
+
+The strategy assumes that the market is characterized by relatively stable price movements over the short and long windows used for moving average calculations.
+
+3. Smooth Price Trends:
+
+The algorithm is suited for markets with smooth and well-defined trends, where crossovers are more likely to indicate significant changes in market direction.
+
+4. Volatility within Tolerable Range:
+
+Moderate volatility is often favorable. Extreme volatility could lead to false signals or rapid changes in trend direction.
+
+### Challenging Market Conditions:
+
+1. Sideways or Range-Bound Markets:
+
+In sideways or range-bound markets with no clear trend, the moving average crossover strategy may generate false signals, resulting in unprofitable trades.
+
+2. Whipsawing:
+
+Whipsawing can occur when the market experiences frequent, short-lived price fluctuations, leading to multiple crossovers without a clear trend direction.
+
+3. Abrupt Price Changes:
+
+Rapid and unpredictable price changes can lead to delayed responses by the algorithm, potentially resulting in losses.
+
 ### 1. Initialization and Setup
 
 The bot is a Python script that uses the ProfitView library for trading operations. It starts by importing necessary modules and defining a class called `Trading` that inherits from `Link`, a class provided by ProfitView.
