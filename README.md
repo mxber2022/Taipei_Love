@@ -4,7 +4,7 @@
 This crypto derivatives trading bot is designed to implement a basic moving average crossover strategy for futures trading on the BitMEX exchange with the LTCUSDT trading pair. The algorithm uses the ProfitView library for interacting with the exchange and executing trades.
 
 ### Requirements
-- Python 3.6
+- Python 3.9
 - ProfitView library 
 
 ## Warning
